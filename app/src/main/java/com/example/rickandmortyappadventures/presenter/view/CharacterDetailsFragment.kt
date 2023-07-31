@@ -45,13 +45,13 @@ class CharacterDetailsFragment : Fragment() {
         binding.apply {
             detailsName.text = personage.name
             detailsRace.text = personage.species
-            detailsOrigin.text = personage.origin!!.name!!.split(" ").first()
+            detailsOrigin.text = personage.origin?.name?.split(" ")?.first()
 
             detailStatus.text = personage.img
             detailGender.text = personage.gender
             detailType.text = personage.type
             detailOrigin.text = detailsOrigin.text
-            detailLocation.text = personage.location!!.name!!.split(" ").first()
+            detailLocation.text = personage.location?.name?.split(" ")?.first()
 
             backpressButton.setOnClickListener { goToHome() }
         }
