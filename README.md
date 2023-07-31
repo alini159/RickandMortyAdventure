@@ -38,7 +38,7 @@ Eu usei as seguintes tecnologias durante :
 
 * <b><a href="https://square.github.io/retrofit/">Retrofit2</a></b> - A lib padrão quando o assunto é http no android e o que eu uso(e a melhor na minha humilde opinião).
 * <b><a href="https://insert-koin.io/docs/quickstart/android/">Koin</a></b> - Escolhi o Koin pra não precisar ficar escrevendo muito boilerplate.
-* <b><a href= "https://developer.android.com/topic/libraries/architecture/paging/v3-overview?hl=pt-br">Paging3</a></b> - A melhor lib pra fazer paginação ela oferece recursos de paginação eficientes, carregamento automático e cache para otimizar o desempenho e a experiência do usuário e é facil de usar.
+* <b><a href= "https://developer.android.com/topic/libraries/architecture/paging/v3-overview?hl=pt-br">Paging3</a></b> - A melhor lib pra fazer paginação ela oferece recursos de paginação eficientes, carregamento automático e cache para otimizar o desempenho e a experiência do usuário.
 * <b><a href="https://developer.android.com/guide/navigation/navigation-getting-started">Jetpack Navigation</a></b> - Utilizei o naviagtion para navegar entre os fragmentos.
 * <b><a href="https://github.com/bumptech/glide">Glide 4</a></b> - Rápida e facil de usar e faz o caching das imagens pra mim.
 * <b><a href="https://material.io/develop/android">Material Components</a></b> - Vários components prontos e também tinha o tab layout que eu precisava pra paginação.
