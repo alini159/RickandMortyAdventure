@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.RickandMortyAppAdventures" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="backgroundColor">@color/light_grey</item>
+        <item name="searchIcon">@color/grey</item>
+        <item name="searchHintIcon">@color/grey</item>
+        <item name="searchViewStyle">@color/grey</item>
+        <item name="android:textColor">@color/grey</item>
+        <item name="editTextColor">@color/grey</item>
+        <item name="android:searchIcon">@drawable/baseline_search_24</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="CustomCardViewStyle" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay_card_custom_corners</item>
+    </style>
+
+
+    <style name="ShapeAppearanceOverlay_card_custom_corners" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">40dp</item>
+        <item name="cornerSizeTopLeft">40dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+</resources>

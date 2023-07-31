@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_green"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/large_200dp">
+
+            <ImageView
+                android:id="@+id/backpress_button"
+                android:layout_width="@dimen/medium_40dp"
+                android:layout_height="@dimen/medium_40dp"
+                android:layout_marginStart="@dimen/small_18dp"
+                android:layout_marginTop="@dimen/small_18dp"
+                android:contentDescription="@string/back_space"
+                android:src="@drawable/arrow_back_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/details_image"
+                android:layout_width="@dimen/large_100dp"
+                android:layout_height="@dimen/large_100dp"
+                android:layout_marginStart="@dimen/medium_40dp"
+                android:layout_marginTop="@dimen/medium_40dp"
+                android:contentDescription="@string/personage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/ic_generic_24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_12dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="@+id/details_image"
+                app:layout_constraintStart_toEndOf="@+id/details_image"
+                app:layout_constraintTop_toTopOf="@+id/details_image">
+
+                <TextView
+                    android:id="@+id/details_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_24sp"
+                    android:textStyle="bold"
+                    tools:text="Rick Sanchez" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_4dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/details_race"
+                        android:layout_width="@dimen/medium_badge_80dp"
+                        android:layout_height="@dimen/small_badge_28dp"
+                        android:layout_marginVertical="@dimen/small_4dp"
+                        android:background="@drawable/badge_background"
+                        android:backgroundTint="@color/pink"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:cornerRadius="@dimen/small_8dp"
+                        tools:text="Humano" />
+
+                    <TextView
+                        android:id="@+id/details_origin"
+                        android:layout_width="@dimen/medium_badge_80dp"
+                        android:layout_height="@dimen/small_badge_28dp"
+                        android:layout_marginVertical="@dimen/small_4dp"
+                        android:layout_marginStart="@dimen/small_8dp"
+                        android:background="@drawable/badge_background"
+                        android:backgroundTint="@color/olive_green"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        app:cornerRadius="@dimen/small_8dp"
+                        tools:text="Terra" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/CustomCardViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/small_18dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/small_18dp"
+                    android:layout_marginStart="@dimen/small_18dp"
+                    android:text="@string/information_details"
+                    android:textColor="@color/light_green"
+                    android:textSize="@dimen/text_24sp"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:orientation="horizontal"
+                    android:rowCount="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_18dp"
+                        android:text="@string/status"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_40dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_20sp"
+                        tools:text="Status" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_18dp"
+                        android:text="@string/gender"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_40dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_20sp"
+                        tools:text="gender" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_18dp"
+                        android:text="@string/type"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_40dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_20sp"
+                        tools:text="type" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_18dp"
+                        android:text="@string/origin"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_origin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_40dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_20sp"
+                        tools:text="origin" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/small_18dp"
+                        android:text="@string/location"
+                        android:textColor="@color/light_green"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detail_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/medium_40dp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_20sp"
+                        tools:text="location" />
+                </GridLayout>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>

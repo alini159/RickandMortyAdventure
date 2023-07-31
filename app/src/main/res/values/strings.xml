@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RickandMortyAppAdventures</string>
+    <string name="description">Pesquise seu personagem favorito</string>
+    <string name="title">Rick and Morty</string>
+    <string name="personage">personagem</string>
+    <string name="description_splash_screen">Rick and Morty</string>
+    <string name="origin">Origin</string>
+    <string name="type">type</string>
+    <string name="location">Location</string>
+    <string name="gender">Gender</string>
+    <string name="status">Status</string>
+    <string name="information_details">Informações Gerais</string>
+    <string name="back_space">voltar</string>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/small_8dp"
+        android:orientation="horizontal">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/light_green"
+            app:cardCornerRadius="@dimen/small_8dp"
+            tools:layout_editor_absoluteX="24dp"
+            tools:layout_editor_absoluteY="32dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="@dimen/large_100dp"
+                    android:layout_height="@dimen/large_100dp"
+                    android:layout_margin="@dimen/small_12dp"
+                    android:contentDescription="@string/personage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@drawable/ic_generic_24dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/small_12dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/image"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="6"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_small_20sp"
+                        android:textStyle="bold"
+                        tools:text="Rick Sanchez" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/small_4dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/specie"
+                            android:layout_width="@dimen/medium_badge_80dp"
+                            android:layout_height="@dimen/small_badge_28dp"
+                            android:layout_marginVertical="@dimen/small_4dp"
+                            android:background="@drawable/badge_background"
+                            android:backgroundTint="@color/pink"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            app:cornerRadius="@dimen/small_8dp"
+                            tools:text="Humano" />
+
+                        <TextView
+                            android:id="@+id/origin"
+                            android:layout_width="@dimen/medium_badge_80dp"
+                            android:layout_height="@dimen/small_badge_28dp"
+                            android:layout_marginVertical="@dimen/small_4dp"
+                            android:layout_marginStart="@dimen/small_8dp"
+                            android:background="@drawable/badge_background"
+                            android:backgroundTint="@color/olive_green"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            app:cornerRadius="@dimen/small_8dp"
+                            tools:text="Terra" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/to_details_button"
+                    android:layout_width="@dimen/medium_40dp"
+                    android:layout_height="@dimen/medium_40dp"
+                    android:layout_marginEnd="@dimen/small_4dp"
+                    android:src="@drawable/arrow_right_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</layout>

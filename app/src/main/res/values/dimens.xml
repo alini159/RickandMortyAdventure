@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_badge_28dp">28dp</dimen>
+    <dimen name="medium_badge_80dp">80dp</dimen>
+    <dimen name="small_8dp">8dp</dimen>
+    <dimen name="small_4dp">4dp</dimen>
+    <dimen name="medium_40dp">40dp</dimen>
+    <dimen name="text_small_20sp">20sp</dimen>
+    <dimen name="small_12dp">12dp</dimen>
+    <dimen name="large_100dp">100dp</dimen>
+    <dimen name="medium_50dp">50dp</dimen>
+    <dimen name="large_180dp">180dp</dimen>
+    <dimen name="small_18dp">18dp</dimen>
+    <dimen name="text_24sp">24sp</dimen>
+    <dimen name="large_200dp">200dp</dimen>
+</resources>
